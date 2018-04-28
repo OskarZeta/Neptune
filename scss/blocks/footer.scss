@@ -1,0 +1,149 @@
+.footer{
+  background-color: #0d3e7e;
+  color: white;
+  padding: 50px 0;
+}
+.footer__info{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.footer__logo{
+  margin-bottom: 20px;
+}
+.footer__phone{
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+}
+.footer__address{
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 5px;
+}
+.footer__vk-logo{
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 13px;
+  text-decoration: none;
+  width: 60%;
+  margin-top: 20px;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+.footer__vk-logo-wrapper{
+  display: flex;
+  width: 25px;
+  height: 25px;
+  background-color: #0269b7;
+  border-radius: 5px;
+  justify-content: center;
+  margin-right: 10px;
+}
+.footer__list-1{
+  width: 50%;
+  list-style-type: none;
+  padding: 0;
+}
+.footer__list-1-item{
+  a{
+    font-size: 14px;
+    line-height: 27px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    &:hover{
+      color: #98ACFF;
+    }
+  }
+}
+.footer__list-2{
+  list-style-type: none;
+  padding: 0 0 0 10px;
+}
+.footer__list-2-item{
+  a{
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 16px;
+    &:hover{
+      color: #98ACFF;
+    }
+  }
+}
+.footer__navigation{
+  width: 50%;
+}
+.footer__navigation-list{
+  list-style-type: none;
+  padding: 0;
+}
+.footer__navigation-item{
+  a{
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    &:hover{
+      color: #98ACFF;
+    }
+  }
+  margin-bottom: 5px;
+}
+.footer__scheme{
+  display: none;
+}
+.footer__copyright{
+  width: 100%;
+  margin-top: 25px;
+  font-size: 12px;
+  color: #c6c6c6;
+  text-align: center;
+}
+
+@media (min-width: 800px) {
+  .footer{
+    padding-top: 60px;
+  }
+  .footer__address{
+    padding-right: 30%;
+  }
+  .footer__copyright{
+    width: 20%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .footer{
+    padding-top: 60px;
+  }
+  .footer__info{
+    width: 233px;
+  }
+  .footer__list-1, .footer__navigation{
+    width: 20%;
+  }
+  .footer__address{
+    padding-right: 0;
+  }
+  .footer__copyright{
+    width: 100%;
+    position: static;
+    margin-top: 0;
+  }
+  .footer__scheme{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    margin-top: 25px;
+  }
+  .footer__scheme-icon{
+    margin-right: 10px;
+  }
+}

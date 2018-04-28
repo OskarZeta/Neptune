@@ -1,0 +1,125 @@
+.main-info{
+  padding-top: 30px;
+  h1{
+    font-size: 26px;
+    color: #3c3c3b;
+    text-align: center;
+  }
+}
+.main-info__items{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 55px;
+}
+.main-info__item{
+  width: 50%;
+  font-size: 13px;
+  line-height: 16px;
+  color: #3c3c3b;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 30px;
+  p{
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+    padding-top: 20px;
+  }
+  a{
+    color: #0066b3;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
+.main-info__icon-star, .main-info__icon-muscle, .main-info__icon-discount{
+  margin-bottom: 20px;
+}
+.main-info__icon-discount{
+  min-height: 50px;
+}
+.main-info__star, .main-info__muscle, .main-info__discount{
+  p{
+    padding-top: 0;
+  }
+}
+.main-info__discount{
+  width: 100%;
+}
+
+.main-info__icon-wrapper{
+  min-height: 85px;
+  margin-bottom: 20px;
+  display: flex;
+}
+@media (min-width: 800px) {
+  .main-info{
+    padding-top: 55px;
+    padding-bottom: 45px;
+  }
+  .main-info__items{
+    padding-top: 100px;
+  }
+  .main-info__item{
+    margin-bottom: 50px;
+  }
+  .main-info__discount{
+    width: 51%;
+    margin: 50px auto 0 auto;
+  }
+  .main-info__icon-wrapper{
+    min-height: 105px;
+    margin-bottom: 0;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .main-info__icon-car{
+    width: 103px;
+    height: 103px;
+  }
+  .main-info__icon-train{
+    width: 86px;
+    height: 73px;
+  }
+  .main-info__icon-star{
+    width: 77px;
+    height: 88px;
+  }
+  .main-info__icon-muscle{
+    width: 76px;
+    height: 76px;
+  }
+  .main-info__icon-discount{
+    width: 87px;
+    height: 50px;
+  }
+  .main-info__text{
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+@media (min-width:1200px) {
+  .main-info{
+    padding-bottom: 20px;
+    h1{
+      font-size: 36px;
+    }
+  }
+  .main-info__items{
+    justify-content: center;
+  }
+  .main-info__item{
+    width: 33%;
+  }
+  .main-info__icon-star, .main-info__icon-muscle, .main-info__icon-discount{
+    margin-bottom: 20px;
+  }
+  .main-info__discount{
+    margin: 0;
+  }
+}

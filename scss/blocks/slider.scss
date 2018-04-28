@@ -1,0 +1,135 @@
+.slider{
+  position: relative;
+}
+.slider__item{
+  display: none;
+  width: 400px;
+  height: 194px;
+  margin: 0 auto;
+}
+.slider__item--active{
+  display: block;
+}
+.slider__prev, .slider__next{
+  position: absolute;
+  cursor: pointer;
+  width: 30px;
+  height: 50px;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  &:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+.slider__prev{
+  left: 0;
+}
+.slider__next{
+  right: 0;
+}
+.slider__prev::before, .slider__next::before,
+.slider__prev::after, .slider__next::after{
+  position: absolute;
+  left: calc(50% - 5px);
+  display: block;
+  content: "";
+  width: 10px;
+  height: 1px;
+  background-color: white;
+}
+.slider__prev::before {
+  top: calc(50% - 4px);
+  transform: rotate(-45deg);
+}
+.slider__prev::after{
+  top: calc(50% + 3px);
+  transform: rotate(45deg);
+}
+.slider__next::before {
+  top: calc(50% - 4px);
+  transform: rotate(45deg);
+}
+.slider__next::after{
+  top: calc(50% + 3px);
+  transform: rotate(-45deg);
+}
+.slider__nav-dots{
+  display: flex;
+}
+.slider__nav-dot{
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border-radius: 10px;
+  margin-right: 7px;
+  cursor: pointer;
+  &:last-child{
+    margin-right: 0;
+  }
+  &:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+.slider__nav-dot--active{
+  background-color: transparent;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  &:hover{
+    background-color: transparent;
+  }
+}
+@media (min-width: 800px) {
+  .slider{
+
+  }
+  .slider__items{
+
+  }
+  .slider__item{
+    width: 800px;
+    height: 289px;
+  }
+  .slider__prev, .slider__next{
+    width: 50px;
+    height: 85px;
+  }
+  .slider__prev::before, .slider__next::before,
+  .slider__prev::after, .slider__next::after{
+    width: 14px;
+  }
+  .slider__prev::before {
+    top: calc(50% - 5px);
+  }
+  .slider__prev::after{
+    top: calc(50% + 5px);
+  }
+  .slider__next::before {
+    top: calc(50% - 5px);
+  }
+  .slider__next::after{
+    top: calc(50% + 5px);
+  }
+  .slider__nav-dot{
+    width: 14px;
+    height: 14px;
+  }
+}
+@media (min-width: 1200px) {
+  .slider__items{
+    overflow: hidden;
+  }
+  .slider__item{
+    position: relative;
+    left: 50%;
+    margin-left: -960px;
+    width: 1920px;
+    height: 690px;
+  }
+  .slider__prev{
+    left: 15px;
+    top: -10px;
+  }
+  .slider__next{
+    right: 15px;
+    top: -10px;
+  }
+}

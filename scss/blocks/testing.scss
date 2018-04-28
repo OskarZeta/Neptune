@@ -1,0 +1,99 @@
+.testing{
+  background: url("../images/sports/mobile/testing-bg-mobile.png") center no-repeat;
+  padding-top: 45px;
+  padding-bottom: 30px;
+  h2{
+    font-size: 26px;
+    color: white;
+    text-align: center;
+    margin-bottom: 45px;
+  }
+}
+.testing__info-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #94d1ff;
+  font-weight: bold;
+  padding: 0 5px;
+  margin-bottom: 33px;
+  strong{
+    font-size: 56px;
+    line-height: 56px;
+  }
+  span{
+    font-size: 16px;
+    text-align: center;
+  }
+}
+.testing__time, .testing__price{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testing__time{
+  margin-right: 10px;
+}
+.testing__desc{
+  width: 40%;
+}
+.testing__form{
+  display: flex;
+  justify-content: space-between;
+  input{
+    width: 170px;
+    border-radius: 5px;
+    border: none;
+    padding: 0 15px;
+  }
+}
+@media (min-width: 800px) {
+  .testing{
+    background: url("../images/sports/tablet/testing-bg-tablet.png") center;
+    padding-bottom: 45px;
+  }
+  .testing__info-wrapper{
+    justify-content: center;
+    margin-bottom: 37px;
+  }
+  .testing__time, .testing__price, .testing__desc{
+    width: 25%;
+  }
+  .testing__form{
+    margin-bottom: 0;
+    input{
+      width: 74%;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .testing{
+    background: url("../images/sports/desktop/testing-bg-desktop.png") center;
+    padding-top: 75px;
+    padding-bottom: 60px;
+    h2{
+      font-size: 36px;
+    }
+  }
+  .testing__wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+  .testing__info-wrapper{
+    width: 50%;
+    margin-bottom: 0;
+    justify-content: space-between;
+    padding-right: 80px;
+  }
+  .testing__form{
+    width: 50%;
+    align-items: center;
+    padding-left: 10px;
+    input{
+      padding-top: 11px;
+      padding-bottom: 11px;
+      border-radius: 0;
+      width: 370px;
+    }
+  }
+}

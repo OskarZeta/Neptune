@@ -1,0 +1,827 @@
+<html>
+<head>
+    <title>Neptune</title>
+    <meta charset="utf-8">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700,800&amp;subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__top-menu">
+            <div class="container container--top-menu">
+                <div class="header__top-menu-wrapper">
+                    <div class="header__top-menu-mobile">
+                        <img src="images/icon-burger.svg">
+                        <span>Меню</span>
+                    </div>
+                    <ul class="header__top-menu-items">
+                        <li class="header__top-menu-item">
+                            <a href="#">О клубе</a>
+                        </li>
+                        <li class="header__top-menu-item">
+                            <a href="#">Клубные карты</a>
+                        </li>
+                        <li class="header__top-menu-item">
+                            <a href="#">Расписание</a>
+                        </li>
+                        <li class="header__top-menu-item">
+                            <a href="#">Новости</a>
+                        </li>
+                        <li class="header__top-menu-item">
+                            <a href="#">Акции</a>
+                        </li>
+                        <li class="header__top-menu-item">
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <a class="header__vk-logo" href="#">
+                        <div class="header__vk-logo-wrapper">
+                            <img src="images/icon-vk.svg">
+                        </div>
+                        <span>ВКонтакте</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header__description">
+            <div class="container container--header-description">
+                <div class="header__description-wrapper">
+                    <picture class="header__logo">
+                        <source srcset="images/logo-header-desktop.png" media="(min-width: 1200px)">
+                        <source srcset="images/logo-header-tablet.png" media="(min-width: 800px)">
+                        <img src="images/logo-header-mobile.png">
+                    </picture>
+                    <div class="header__phones">
+                        <span>+7 (812) 324-46-96</span>
+                        <span>+7 (921) 320-26-12</span>
+                    </div>
+                    <a class="header__scheme" href="#">
+                        <img class="header__scheme-img" src="images/icon-scheme.svg">
+                        <span>Схема клуба</span>
+                    </a>
+                    <div class="header__address">
+                        Санкт-Петербург, МДЦ Нептун наб. Обводного канала, 93-а
+                    </div>
+                </div>
+                <a class="btn-blue btn-blue--order" href="#">Заказать</a>
+            </div>
+        </div>
+        <nav class="header__navigation">
+            <div class="container container--header-navigation">
+                <div class="header__navigation-mobile">
+                    <img src="images/icon-burger-white.svg">
+                    <span>Услуги</span>
+                </div>
+                <ul class="header__navigation-1">
+                    <li class="header__navigation-1-item">
+                        <a href="#">Тренажёрный зал</a>
+                        <ul class="header__navigation-2">
+                            <li class="header__navigation-2-item">
+                                <a href="#">Пункт меню 1</a>
+                            </li>
+                            <li class="header__navigation-2-item">
+                                <a href="#">Пункт меню 2</a>
+                            </li>
+                            <li class="header__navigation-2-item">
+                                <a href="#">Пункт меню 3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header__navigation-1-item">
+                        <a href="#">Аэробный зал</a>
+                    </li>
+                    <li class="header__navigation-1-item">
+                        <a href="#">Бассейн</a>
+                    </li>
+                    <li class="header__navigation-1-item">
+                        <a href="#">Теннис</a>
+                    </li>
+                    <li class="header__navigation-1-item">
+                        <a href="#">Spa</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="slider">
+        <div class="slider__items">
+            <picture class="slider__item slider__item--active">
+                <source srcset="images/slider/slide-1-desktop.png" media="(min-width: 1200px)">
+                <source srcset="images/slider/slide-1-tablet.png" media="(min-width: 800px)">
+                <img src="images/slider/slide-1-mobile.png">
+            </picture>
+            <picture class="slider__item">
+                <source srcset="images/slider/slide-2-desktop.png" media="(min-width: 1200px)">
+                <source srcset="images/slider/slide-2-tablet.png" media="(min-width: 800px)">
+                <img src="images/slider/slide-2-mobile.png">
+            </picture>
+            <picture class="slider__item">
+                <source srcset="images/slider/slide-3-desktop.png" media="(min-width: 1200px)">
+                <source srcset="images/slider/slide-3-tablet.png" media="(min-width: 800px)">
+                <img src="images/slider/slide-3-mobile.png">
+            </picture>
+            <picture class="slider__item">
+                <source srcset="images/slider/slide-4-desktop.png" media="(min-width: 1200px)">
+                <source srcset="images/slider/slide-4-tablet.png" media="(min-width: 800px)">
+                <img src="images/slider/slide-4-mobile.png">
+            </picture>
+            <picture class="slider__item">
+                <source srcset="images/slider/slide-5-desktop.png" media="(min-width: 1200px)">
+                <source srcset="images/slider/slide-5-tablet.png" media="(min-width: 800px)">
+                <img src="images/slider/slide-5-mobile.png">
+            </picture>
+        </div>
+        <div class="container container--slider-arrows">
+            <div class="slider__nav-arrows">
+                <div class="slider__prev"></div>
+                <div class="slider__next"></div>
+            </div>
+        </div>
+        <div class="container container--slider-dots">
+            <div class="slider__nav-dots">
+                <!--<div class="slider__nav-dot slider__nav-dot&#45;&#45;active"></div>-->
+                <!--<div class="slider__nav-dot"></div>-->
+                <!--<div class="slider__nav-dot"></div>-->
+                <!--<div class="slider__nav-dot"></div>-->
+                <!--<div class="slider__nav-dot"></div>-->
+            </div>
+        </div>
+    </section>
+    <main>
+        <section class="main-info">
+            <div class="container container--main-info">
+                <h1>Фитнес-Центр “Нептун” - 17 лет успешной работы!</h1>
+                <div class="main-info__items">
+                    <div class="main-info__item main-info__car">
+                        <div class="main-info__icon-wrapper main-info__icon-car">
+                            <img src="images/icon-info-1.svg">
+                        </div>
+                        <p class="main-info__text">
+                            Современный клуб в центре города
+                            с <a href="#">удобным расположением</a> и собственной
+                            бесплатной парковкой
+                        </p>
+                    </div>
+                    <div class="main-info__item main-info__train">
+                        <div class="main-info__icon-wrapper main-info__icon-train">
+                            <img src="images/icon-info-2.svg">
+                        </div>
+                        <p class="main-info__text">
+                            У нас есть все необходимое для проведения комфортных
+                            полноценных тренировок, восстановления и отдыха
+                        </p>
+                    </div>
+                    <div class="main-info__item main-info__star">
+                        <div class="main-info__icon-wrapper main-info__icon-star">
+                            <img src="images/icon-info-3.svg">
+                        </div>
+                        <p class="main-info__text">
+                            Занимаясь в нашем клубе можно встретить известных
+                            политиков, деятелей театра и кино, индустрии шоу-бизнеса
+                        </p>
+                    </div>
+                    <div class="main-info__item main-info__muscle">
+                        <div class="main-info__icon-wrapper main-info__icon-muscle">
+                            <img src="images/icon-info-4.svg">
+                        </div>
+                        <p class="main-info__text">
+                            <a href="#">Профессиональная команда</a> нашего клуба подготавливает
+                            большое количество мастеров спорта в различных дисциплинах
+                        </p>
+                    </div>
+                    <div class="main-info__item main-info__discount">
+                        <div class="main-info__icon-wrapper main-info__icon-discount">
+                            <img src="images/icon-info-5.svg">
+                        </div>
+                        <p class="main-info__text">
+                            Для вас действует открытая ценовая политика и <a href="#">система скидок и бонусов</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gyms">
+            <div class="container container--gyms">
+                <h2>Залы</h2>
+                <div class="gyms__wrapper">
+                    <div class="gyms__item">
+                        <div class="sport-item">
+                            <a class="sport-item__ref" href="#">
+                                <picture>
+                                    <source srcset="images/sports/desktop/gym-desktop.png" media="(min-width: 1200px)">
+                                    <source srcset="images/sports/tablet/gym-tablet.png" media="(min-width: 800px)">
+                                    <img src="images/sports/mobile/gym-mobile.png">
+                                </picture>
+                                <div class="sport-item__wrapper">
+                                    <span>Тренажерный зал</span>
+                                    <div class="arrow arrow--right arrow--white"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="gyms__item1-desc-wrapper">
+                            <div class="gyms__item1-desc">
+                                <strong>101</strong>
+                                <span>новый европейский тренажер</span>
+                            </div>
+                            <div class="gyms__item1-desc">
+                                <strong>100</strong>
+                                <span>кв. м</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gyms__item">
+                        <div class="sport-item">
+                            <a class="sport-item__ref" href="#">
+                                <picture>
+                                    <source srcset="images/sports/desktop/aerobics-desktop.png" media="(min-width: 1200px)">
+                                    <source srcset="images/sports/tablet/aerobics-tablet.png" media="(min-width: 800px)">
+                                    <img src="images/sports/mobile/aerobics-mobile.png">
+                                </picture>
+                                <div class="sport-item__wrapper">
+                                    <span>Аэробный зал</span>
+                                    <div class="arrow arrow--right arrow--white"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="gyms__item2-desc-wrapper">
+                            <h3>Групповые занятия:</h3>
+                            <ul class="gyms__exercises">
+                                <li class="gyms__exercise">Танцы</li>
+                                <li class="gyms__exercise">Йога</li>
+                                <li class="gyms__exercise">Аэробика</li>
+                                <li class="gyms__exercise">Боди скульпт</li>
+                            </ul>
+                            <a class="btn-blue btn-blue--schedule" href="#">
+                                Расписание
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pools">
+            <div class="container container--pools">
+                <h2>Бассейн</h2>
+                <div class="pools__wrapper">
+                    <div class="pools__item">
+                        <div class="sport-item">
+                            <a class="sport-item__ref" href="#">
+                                <picture>
+                                    <source srcset="images/sports/desktop/pool-1-desktop.png" media="(min-width: 1200px)">
+                                    <source srcset="images/sports/tablet/pool-1-tablet.png" media="(min-width: 800px)">
+                                    <img src="images/sports/mobile/pool-1-mobile.png">
+                                </picture>
+                                <div class="sport-item__wrapper">
+                                    <span>Взрослый бассейн</span>
+                                    <div class="arrow arrow--right arrow--white"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="pools__item-desc-wrapper">
+                            <div class="pools__item-desc">
+                                <strong>25</strong>
+                                <span>метров</span>
+                            </div>
+                            <div class="pools__item-desc">
+                                <strong>5</strong>
+                                <span>дорожек</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pools__item">
+                        <div class="sport-item">
+                            <a class="sport-item__ref" href="#">
+                                <picture>
+                                    <source srcset="images/sports/desktop/pool-2-desktop.png" media="(min-width: 1200px)">
+                                    <source srcset="images/sports/tablet/pool-2-tablet.png" media="(min-width: 800px)">
+                                    <img src="images/sports/mobile/pool-2-mobile.png">
+                                </picture>
+                                <div class="sport-item__wrapper">
+                                    <span>Детский бассейн</span>
+                                    <div class="arrow arrow--right arrow--white"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="pools__item-desc-wrapper">
+                            <div class="pools__item-desc">
+                                <strong>10</strong>
+                                <span>метров</span>
+                            </div>
+                            <div class="pools__item-desc">
+                                <span>
+                                    от
+                                    <strong>6</strong>
+                                    лет проводятся занятия
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="extra">
+            <div class="container container--extra">
+                <div class="extra__item sport-item sport-item--mini">
+                    <a class="sport-item__ref" href="#">
+                        <picture>
+                            <source srcset="images/sports/desktop/skvosh-desktop.png" media="(min-width: 1200px)">
+                            <source srcset="images/sports/tablet/skvosh-tablet.png" media="(min-width: 800px)">
+                            <img src="images/sports/mobile/skvosh-mobile.png">
+                        </picture>
+                        <div class="sport-item__wrapper">
+                            <span>Сквош</span>
+                            <div class="arrow arrow--right arrow--white"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="extra__item sport-item sport-item--mini">
+                    <a class="sport-item__ref" href="#">
+                        <picture>
+                            <source srcset="images/sports/desktop/tennis-desktop.png" media="(min-width: 1200px)">
+                            <source srcset="images/sports/tablet/tennis-tablet.png" media="(min-width: 800px)">
+                            <img src="images/sports/mobile/tennis-mobile.png">
+                        </picture>
+                        <div class="sport-item__wrapper">
+                            <span>Теннис</span>
+                            <div class="arrow arrow--right arrow--white"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="extra__item sport-item sport-item--mini">
+                    <a class="sport-item__ref" href="#">
+                        <picture>
+                            <source srcset="images/sports/desktop/tennis-table-desktop.png" media="(min-width: 1200px)">
+                            <source srcset="images/sports/tablet/tennis-table-tablet.png" media="(min-width: 800px)">
+                            <img src="images/sports/mobile/tennis-table-mobile.png">
+                        </picture>
+                        <div class="sport-item__wrapper">
+                            <span>Настольный теннис</span>
+                            <div class="arrow arrow--right arrow--white"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="extra__item sport-item sport-item--mini">
+                    <a class="sport-item__ref" href="#">
+                        <picture>
+                            <source srcset="images/sports/desktop/combat-desktop.png" media="(min-width: 1200px)">
+                            <source srcset="images/sports/tablet/combat-tablet.png" media="(min-width: 800px)">
+                            <img src="images/sports/mobile/combat-mobile.png">
+                        </picture>
+                        <div class="sport-item__wrapper">
+                            <span>Зал единоборств</span>
+                            <div class="arrow arrow--right arrow--white"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="spa">
+            <div class="container container--spa">
+                <h2>SPA и другие услуги</h2>
+                <div class="spa__wrapper">
+                    <ul class="spa__services-list">
+                        <li class="spa__service">
+                            <div class="spa__service-desc">
+                                <span>Турецкая сауна</span>
+                                <div class="arrow arrow--down arrow--grey"></div>
+                                <div class="arrow arrow--left arrow--hidden arrow--white"></div>
+                                <div class="arrow arrow--right arrow--hidden arrow--grey"></div>
+                            </div>
+                            <div class="spa__service-wrapper">
+                                <picture class="spa__service-img-big">
+                                    <source srcset="images/sports/desktop/service-big-desktop.png" media="(min-width: 1200px)">
+                                    <source srcset="images/sports/tablet/service-big-tablet.png" media="(min-width: 800px)">
+                                    <img src="images/sports/mobile/service-big-mobile.png">
+                                </picture>
+                                <div class="spa__service-other-imgs">
+                                    <picture class="spa__service-img-other">
+                                        <source srcset="images/sports/desktop/service-small-1-desktop.png" media="(min-width: 1200px)">
+                                        <source srcset="images/sports/tablet/service-small-1-tablet.png" media="(min-width: 800px)">
+                                        <img src="images/sports/mobile/service-small-1-mobile.png">
+                                    </picture>
+                                    <picture class="spa__service-img-other">
+                                        <source srcset="images/sports/desktop/service-small-2-desktop.png" media="(min-width: 1200px)">
+                                        <source srcset="images/sports/tablet/service-small-2-tablet.png" media="(min-width: 800px)">
+                                        <img src="images/sports/mobile/service-small-2-mobile.png">
+                                    </picture>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="spa__service">
+                            <div class="spa__service-desc">
+                                <span>Инфракрасная сауна</span>
+                                <div class="arrow arrow--down arrow--grey"></div>
+                                <div class="arrow arrow--left arrow--hidden arrow--white"></div>
+                                <div class="arrow arrow--right arrow--hidden arrow--grey"></div>
+                            </div>
+                            <div class="spa__service-wrapper">
+                                <picture class="spa__service-img-big">
+                                    <source srcset="images/sports/desktop/service-big-desktop.png" media="(min-width: 1200px)">
+                                    <source srcset="images/sports/tablet/service-big-tablet.png" media="(min-width: 800px)">
+                                    <img src="images/sports/mobile/service-big-mobile.png">
+                                </picture>
+                                <div class="spa__service-other-imgs">
+                                    <picture class="spa__service-img-other">
+                                        <source srcset="images/sports/desktop/service-small-1-desktop.png" media="(min-width: 1200px)">
+                                        <source srcset="images/sports/tablet/service-small-1-tablet.png" media="(min-width: 800px)">
+                                        <img src="images/sports/mobile/service-small-1-mobile.png">
+                                    </picture>
+                                    <picture class="spa__service-img-other">
+                                        <source srcset="images/sports/desktop/service-small-2-desktop.png" media="(min-width: 1200px)">
+                                        <source srcset="images/sports/tablet/service-small-2-tablet.png" media="(min-width: 800px)">
+                                        <img src="images/sports/mobile/service-small-2-mobile.png">
+                                    </picture>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="spa__service spa__service--active">
+                            <div class="spa__service-desc">
+                                <span>Сауна люкс</span>
+                                <div class="arrow arrow--down arrow--grey"></div>
+                                <div class="arrow arrow--left arrow--hidden arrow--white"></div>
+                                <div class="arrow arrow--right arrow--hidden arrow--grey"></div>
+                            </div>
+                            <div class="spa__service-wrapper">
+                                <picture class="spa__service-img-big">
+                                    <source srcset="images/sports/desktop/sauna-big-desktop.png" media="(min-width: 1200px)">
+                                    <source srcset="images/sports/tablet/sauna-big-tablet.png" media="(min-width: 800px)">
+                                    <img src="images/sports/mobile/sauna-big-mobile.png">
+                                </picture>
+                                <div class="spa__service-other-imgs">
+                                    <picture class="spa__service-img-other">
+                                        <source srcset="images/sports/desktop/sauna-small-1-desktop.png" media="(min-width: 1200px)">
+                                        <source srcset="images/sports/tablet/sauna-small-1-tablet.png" media="(min-width: 800px)">
+                                        <img src="images/sports/mobile/sauna-small-1-mobile.png">
+                                    </picture>
+                                    <picture class="spa__service-img-other">
+                                        <source srcset="images/sports/desktop/sauna-small-2-desktop.png" media="(min-width: 1200px)">
+                                        <source srcset="images/sports/tablet/sauna-small-2-tablet.png" media="(min-width: 800px)">
+                                        <img src="images/sports/mobile/sauna-small-2-mobile.png">
+                                    </picture>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="spa__service">
+                            <div class="spa__service-desc">
+                                <span>Массажный кабинет</span>
+                                <div class="arrow arrow--down arrow--grey"></div>
+                                <div class="arrow arrow--left arrow--hidden arrow--white"></div>
+                                <div class="arrow arrow--right arrow--hidden arrow--grey"></div>
+                            </div>
+                            <div class="spa__service-wrapper">
+                                <picture class="spa__service-img-big">
+                                    <source srcset="images/sports/desktop/service-big-desktop.png" media="(min-width: 1200px)">
+                                    <source srcset="images/sports/tablet/service-big-tablet.png" media="(min-width: 800px)">
+                                    <img src="images/sports/mobile/service-big-mobile.png">
+                                </picture>
+                                <div class="spa__service-other-imgs">
+                                    <picture class="spa__service-img-other">
+                                        <source srcset="images/sports/desktop/service-small-1-desktop.png" media="(min-width: 1200px)">
+                                        <source srcset="images/sports/tablet/service-small-1-tablet.png" media="(min-width: 800px)">
+                                        <img src="images/sports/mobile/service-small-1-mobile.png">
+                                    </picture>
+                                    <picture class="spa__service-img-other">
+                                        <source srcset="images/sports/desktop/service-small-2-desktop.png" media="(min-width: 1200px)">
+                                        <source srcset="images/sports/tablet/service-small-2-tablet.png" media="(min-width: 800px)">
+                                        <img src="images/sports/mobile/service-small-2-mobile.png">
+                                    </picture>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="spa__service">
+                            <div class="spa__service-desc">
+                                <span>Кислородная борокамера</span>
+                                <div class="arrow arrow--down arrow--grey"></div>
+                                <div class="arrow arrow--left arrow--hidden arrow--white"></div>
+                                <div class="arrow arrow--right arrow--hidden arrow--grey"></div>
+                            </div>
+                            <div class="spa__service-wrapper">
+                                <picture class="spa__service-img-big">
+                                    <source srcset="images/sports/desktop/service-big-desktop.png" media="(min-width: 1200px)">
+                                    <source srcset="images/sports/tablet/service-big-tablet.png" media="(min-width: 800px)">
+                                    <img src="images/sports/mobile/service-big-mobile.png">
+                                </picture>
+                                <div class="spa__service-other-imgs">
+                                    <picture class="spa__service-img-other">
+                                        <source srcset="images/sports/desktop/service-small-1-desktop.png" media="(min-width: 1200px)">
+                                        <source srcset="images/sports/tablet/service-small-1-tablet.png" media="(min-width: 800px)">
+                                        <img src="images/sports/mobile/service-small-1-mobile.png">
+                                    </picture>
+                                    <picture class="spa__service-img-other">
+                                        <source srcset="images/sports/desktop/service-small-2-desktop.png" media="(min-width: 1200px)">
+                                        <source srcset="images/sports/tablet/service-small-2-tablet.png" media="(min-width: 800px)">
+                                        <img src="images/sports/mobile/service-small-2-mobile.png">
+                                    </picture>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="spa__service">
+                            <div class="spa__service-desc">
+                                <span>Сауна Стандарт</span>
+                                <div class="arrow arrow--down arrow--grey"></div>
+                                <div class="arrow arrow--left arrow--hidden arrow--white"></div>
+                                <div class="arrow arrow--right arrow--hidden arrow--grey"></div>
+                            </div>
+                            <div class="spa__service-wrapper">
+                                <picture class="spa__service-img-big">
+                                    <source srcset="images/sports/desktop/service-big-desktop.png" media="(min-width: 1200px)">
+                                    <source srcset="images/sports/tablet/service-big-tablet.png" media="(min-width: 800px)">
+                                    <img src="images/sports/mobile/service-big-mobile.png">
+                                </picture>
+                                <div class="spa__service-other-imgs">
+                                    <picture class="spa__service-img-other">
+                                        <source srcset="images/sports/desktop/service-small-1-desktop.png" media="(min-width: 1200px)">
+                                        <source srcset="images/sports/tablet/service-small-1-tablet.png" media="(min-width: 800px)">
+                                        <img src="images/sports/mobile/service-small-1-mobile.png">
+                                    </picture>
+                                    <picture class="spa__service-img-other">
+                                        <source srcset="images/sports/desktop/service-small-2-desktop.png" media="(min-width: 1200px)">
+                                        <source srcset="images/sports/tablet/service-small-2-tablet.png" media="(min-width: 800px)">
+                                        <img src="images/sports/mobile/service-small-2-mobile.png">
+                                    </picture>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="spa__service">
+                            <div class="spa__service-desc">
+                                <span>Фитнес бар</span>
+                                <div class="arrow arrow--down arrow--grey"></div>
+                                <div class="arrow arrow--left arrow--hidden arrow--white"></div>
+                                <div class="arrow arrow--right arrow--hidden arrow--grey"></div>
+                            </div>
+                            <div class="spa__service-wrapper">
+                                <picture class="spa__service-img-big">
+                                    <source srcset="images/sports/desktop/service-big-desktop.png" media="(min-width: 1200px)">
+                                    <source srcset="images/sports/tablet/service-big-tablet.png" media="(min-width: 800px)">
+                                    <img src="images/sports/mobile/service-big-mobile.png">
+                                </picture>
+                                <div class="spa__service-other-imgs">
+                                    <picture class="spa__service-img-other">
+                                        <source srcset="images/sports/desktop/service-small-1-desktop.png" media="(min-width: 1200px)">
+                                        <source srcset="images/sports/tablet/service-small-1-tablet.png" media="(min-width: 800px)">
+                                        <img src="images/sports/mobile/service-small-1-mobile.png">
+                                    </picture>
+                                    <picture class="spa__service-img-other">
+                                        <source srcset="images/sports/desktop/service-small-2-desktop.png" media="(min-width: 1200px)">
+                                        <source srcset="images/sports/tablet/service-small-2-tablet.png" media="(min-width: 800px)">
+                                        <img src="images/sports/mobile/service-small-2-mobile.png">
+                                    </picture>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="testing">
+            <div class="container container--testing">
+                <h2>Протестируйте</h2>
+                <div class="testing__wrapper">
+                    <div class="testing__info-wrapper">
+                        <div class="testing__time">
+                            <strong>7</strong>
+                            <span>дней</span>
+                        </div>
+                        <div class="testing__price">
+                            <strong>3500</strong>
+                            <span>рублей</span>
+                        </div>
+                        <span class="testing__desc">Неограниченное посещение</span>
+                    </div>
+                    <form class="testing__form">
+                        <input type="tel" title="phone" placeholder="Ваш телефон">
+                        <button class="btn-blue btn-blue--test" type="submit">Протестировать</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container container--about">
+                <h2>О нас</h2>
+                <p class="about__desc">
+                    <strong>МДЦ “Нептун”</strong>
+                    - многофункциональный комплекс, который включает в себя:
+                </p>
+                <div class="about__wrapper">
+                    <div class="about__item sport-item sport-item--mini">
+                        <a class="sport-item__ref" href="#">
+                            <picture>
+                                <source srcset="images/sports/desktop/hotel-desktop.png" media="(min-width: 1200px)">
+                                <source srcset="images/sports/tablet/hotel-tablet.png" media="(min-width: 800px)">
+                                <img src="images/sports/mobile/hotel-mobile.png">
+                            </picture>
+                            <div class="sport-item__wrapper">
+                                <span>Гостиничный комплекс</span>
+                                <div class="arrow arrow--right arrow--white"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="about__item sport-item sport-item--mini">
+                        <a class="sport-item__ref" href="#">
+                            <picture>
+                                <source srcset="images/sports/desktop/restaurant-desktop.png" media="(min-width: 1200px)">
+                                <source srcset="images/sports/tablet/restaurant-tablet.png" media="(min-width: 800px)">
+                                <img src="images/sports/mobile/restaurant-mobile.png">
+                            </picture>
+                            <div class="sport-item__wrapper">
+                                <span>Ресторанный комплекс</span>
+                                <div class="arrow arrow--right arrow--white"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="about__item sport-item sport-item--mini">
+                        <a class="sport-item__ref" href="#">
+                            <picture>
+                                <source srcset="images/sports/desktop/sport-desktop.png" media="(min-width: 1200px)">
+                                <source srcset="images/sports/tablet/sport-tablet.png" media="(min-width: 800px)">
+                                <img src="images/sports/mobile/sport-mobile.png">
+                            </picture>
+                            <div class="sport-item__wrapper">
+                                <span>Спортивный комплекс</span>
+                                <div class="arrow arrow--right arrow--white"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="about__item sport-item sport-item--mini">
+                        <a class="sport-item__ref" href="#">
+                            <picture>
+                                <source srcset="images/sports/desktop/office-desktop.png" media="(min-width: 1200px)">
+                                <source srcset="images/sports/tablet/office-tablet.png" media="(min-width: 800px)">
+                                <img src="images/sports/mobile/office-mobile.png">
+                            </picture>
+                            <div class="sport-item__wrapper">
+                                <span>Офисный центр</span>
+                                <div class="arrow arrow--right arrow--white"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="container container--contacts">
+                <h2>Контакты</h2>
+                <div class="contacts__wrapper">
+                    <div class="contacts__item">
+                        <div class="contacts__icon">
+                            <img src="images/icon-location.svg">
+                        </div>
+                        <div class="contacts__info">
+                            <h3>Местоположение:</h3>
+                            <span>МДЦ "Нептун"</span>
+                            <span class="contacts__address">Санкт-Петербург, наб. Обводного канала, 93-а</span>
+                        </div>
+                    </div>
+                    <div class="contacts__item">
+                        <div class="contacts__icon">
+                            <img src="images/icon-phone.svg">
+                        </div>
+                        <div class="contacts__info">
+                            <h3>Телефон:</h3>
+                            <span>+7 (812) 324-46-96 </span>
+                            <span>+7 (921) 320-26-12 </span>
+                        </div>
+                    </div>
+                    <div class="contacts__item">
+                        <div class="contacts__icon">
+                            <img src="images/icon-mail.svg">
+                        </div>
+                        <div class="contacts__info">
+                            <h3>E-mail:</h3>
+                            <a href="#">sport@neptun.spb.ru</a>
+                        </div>
+                    </div>
+                    <div class="contacts__item">
+                        <div class="contacts__icon">
+                            <img src="images/icon-vk-blue.svg">
+                        </div>
+                        <div class="contacts__info">
+                            <h3>Группа ВКонтакте:</h3>
+                            <a href="#">vk.com/sport_neptun</a>
+                        </div>
+                    </div>
+                    <a class="contacts__up" title="Наверх">
+                        <span class="arrow arrow--up arrow--white"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="contacts__map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab411c663765b8743062820f3539683a9dd64bde949e0bc79e33e6d06f8c1ac1d&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true">
+
+                </script>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container container--footer">
+            <div class="footer__info">
+                <picture class="footer__logo">
+                    <source srcset="images/logo-footer-desktop.png" media="(min-width: 1200px)">
+                    <source srcset="images/logo-footer-tablet.png" media="(min-width: 800px)">
+                    <img src="images/logo-footer-mobile.png">
+                </picture>
+                <span class="footer__phone">+7 (812) 324-46-96 </span>
+                <span class="footer__phone">+7 (921) 320-26-12 </span>
+                <span class="footer__address">
+                    Санкт-Петербург, МДЦ Нептун наб. Обводного канала, 93-а
+                </span>
+                <a class="footer__vk-logo" href="#">
+                    <div class="footer__vk-logo-wrapper">
+                        <img src="images/icon-vk.svg">
+                    </div>
+                    <span>ВКонтакте</span>
+                </a>
+            </div>
+            <ul class="footer__list-1">
+                <li class="footer__list-1-item">
+                    <a href="#">Тренажерный зал</a>
+                </li>
+                <li class="footer__list-1-item">
+                    <a href="#">Аэробный зал</a>
+                </li>
+                <li class="footer__list-1-item">
+                    <a href="#">Бассейн
+                        <ul class="footer__list-2">
+                            <li class="footer__list-2-item">
+                                <a href="#">Взрослый бассейн</a>
+                            </li>
+                            <li class="footer__list-2-item">
+                                <a href="#">Десткий бассейн</a>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="footer__list-1-item">
+                    <a href="#">Сквош</a>
+                </li>
+                <li class="footer__list-1-item">
+                    <a href="#">Теннис</a>
+                </li>
+            </ul>
+            <ul class="footer__list-1">
+                <li class="footer__list-1-item">
+                    <a href="#">Настольный теннис</a>
+                </li>
+                <li class="footer__list-1-item">
+                    <a href="#">Зал единоборств</a>
+                </li>
+                <li class="footer__list-1-item">
+                    <a href="#">Spa и другие услуги
+                        <ul class="footer__list-2">
+                            <li class="footer__list-2-item">
+                                <a href="#">Турецкая сауна</a>
+                            </li>
+                            <li class="footer__list-2-item">
+                                <a href="#">Инфракрасная сауна</a>
+                            </li>
+                            <li class="footer__list-2-item">
+                                <a href="#">Массажный кабинет</a>
+                            </li>
+                            <li class="footer__list-2-item">
+                                <a href="#">Кислородная борокамера</a>
+                            </li>
+                            <li class="footer__list-2-item">
+                                <a href="#">Сауна стандарт</a>
+                            </li>
+                            <li class="footer__list-2-item">
+                                <a href="#">Фитнес бар</a>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+            </ul>
+            <nav class="footer__navigation">
+                <ul class="footer__navigation-list">
+                    <li class="footer__navigation-item">
+                        <a href="#">О клубе</a>
+                    </li>
+                    <li class="footer__navigation-item">
+                        <a href="#">Клубные карты</a>
+                    </li>
+                    <li class="footer__navigation-item">
+                        <a href="#">Расписание</a>
+                    </li>
+                    <li class="footer__navigation-item">
+                        <a href="#">Новости</a>
+                    </li>
+                    <li class="footer__navigation-item">
+                        <a href="#">Акции</a>
+                    </li>
+                    <li class="footer__navigation-item">
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+                <a class="footer__scheme" href="#">
+                    <img class="footer__scheme-icon" src="images/icon-scheme-light.svg">
+                    <span class="footer__scheme-text">Схема клуба</span>
+                </a>
+            </nav>
+            <div class="footer__copyright">
+                МДЦ “Нептун” © 2017
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+</html>

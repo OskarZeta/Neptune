@@ -1,0 +1,7 @@
+build/
+maket/
+node_modules/
+css/
+.DS_Store
+Thumbs.db
+.idea

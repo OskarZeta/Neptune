@@ -1,0 +1,73 @@
+.pools{
+  background: url("../images/sports/mobile/pools-bg-mobile.png") center no-repeat;
+  padding-top: 35px;
+  h2{
+    font-size: 26px;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+.pools__item:last-child{
+  .pools__item-desc:last-child{
+    width: 60%;
+  }
+}
+.pools__item-desc-wrapper{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px 30px 40px;
+}
+.pools__item-desc{
+  color: white;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  strong{
+    font-size: 56px;
+    line-height: 56px;
+    text-align: center;
+  }
+  span{
+    font-size: 16px;
+    text-align: center;
+  }
+}
+@media (min-width: 800px) {
+  .pools{
+    background: url("../images/sports/tablet/pools-bg-tablet.png") center no-repeat;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    h2{
+      margin-bottom: 65px;
+    }
+  }
+  .pools__wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+  .pools__item{
+    width: calc(50% - 15px);
+  }
+  .pools__item-desc-wrapper{
+    padding-top: 17px;
+  }
+}
+@media (min-width: 1200px) {
+  .pools{
+    background: url("../images/sports/desktop/pools-bg-desktop.png");
+    padding-top: 60px;
+    h2{
+      font-size: 36px;
+    }
+  }
+  .pools__item-desc-wrapper{
+    justify-content: space-around;
+  }
+  .pools__item:last-child{
+    .pools__item-desc:last-child{
+      width: 35%;
+    }
+  }
+}

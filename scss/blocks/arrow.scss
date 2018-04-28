@@ -1,0 +1,96 @@
+.arrow{
+  position: relative;
+}
+.arrow--white::before, .arrow--white::after{
+  background-color: white;
+}
+.arrow--grey::before, .arrow--grey::after{
+  background-color: #626262;
+}
+.arrow--hidden{
+  display: none;
+}
+.arrow--right{
+  width: 10px;
+}
+.arrow--right::before, .arrow--right::after{
+  position: absolute;
+  left: 0;
+  display: block;
+  content: "";
+  width: 7px;
+  height: 1px;
+}
+.arrow--right::before {
+  top: calc(50% - 3px);
+  transform: rotate(45deg);
+}
+.arrow--right::after{
+  top: calc(50% + 2px);
+  transform: rotate(-45deg);
+}
+
+.arrow--down{
+  width: 12px;
+}
+.arrow--down::before, .arrow--down::after{
+  position: absolute;
+  display: block;
+  content: "";
+  width: 6px;
+  height: 1px;
+
+}
+.arrow--down::before {
+  top: 50%;
+  left: 0;
+  transform: rotate(45deg);
+}
+.arrow--down::after{
+  top: 50%;
+  left: 4px;
+  transform: rotate(-45deg);
+}
+
+.arrow--left{
+  width: 10px;
+}
+.arrow--left::before, .arrow--left::after{
+  position: absolute;
+  left: 0;
+  display: block;
+  content: "";
+  width: 7px;
+  height: 1px;
+  background-color: white;
+}
+.arrow--left::before {
+  top: calc(50% + 2px);
+  transform: rotate(45deg);
+}
+.arrow--left::after{
+  top: calc(50% - 2.5px);
+  transform: rotate(-45deg);
+}
+
+.arrow--up{
+  width: 14px;
+}
+.arrow--up::before, .arrow--up::after{
+  position: absolute;
+  display: block;
+  content: "";
+  width: 7px;
+  height: 1px;
+
+}
+.arrow--up::before {
+  top: 50%;
+  left: 5px;
+  transform: rotate(45deg);
+}
+.arrow--up::after{
+  top: 50%;
+  left: 1px;
+  transform: rotate(-45deg);
+}

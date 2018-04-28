@@ -1,0 +1,98 @@
+.gyms{
+  background-color: #efefef;
+  padding-top: 25px;
+  h2{
+    text-align: center;
+    font-size: 26px;
+    color: #626262;
+    line-height: 40px;
+    margin-bottom: 35px;
+  }
+}
+.gyms__item1-desc-wrapper{
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px 0;
+  margin-bottom: 15px;
+}
+.gyms__item1-desc{
+  color: #626262;
+  font-weight: bold;
+  text-align: center;
+  strong{
+    font-size: 56px;
+    line-height: 56px;
+  }
+  span{
+    font-size: 16px;
+    line-height: 16px;
+  }
+  &:first-child{
+    width: 55%;
+    margin-right: 25px;
+  }
+  &:last-child{
+    width: 30%;
+  }
+}
+.gyms__item2-desc-wrapper{
+  font-size: 16px;
+  font-weight: bold;
+  padding: 25px 0 30px 0;
+  h3{
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+}
+.gyms__exercises{
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+.gyms__exercise{
+  color: #858585;
+  width: 50%;
+}
+@media (min-width: 800px) {
+  .gyms{
+    padding-top: 40px;
+    h2{
+      margin-bottom: 60px;
+    }
+  }
+  .gyms__wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+  .gyms__item{
+    width: calc(50% - 15px);
+  }
+  .gyms__exercises{
+    margin-bottom: 15px;
+  }
+  .gyms__exercise{
+    padding-bottom: 5px;
+  }
+}
+@media (min-width: 1200px) {
+  .gyms{
+    padding-bottom: 30px;
+    h2{
+      font-size: 36px;
+    }
+  }
+  .gyms__item1-desc{
+    padding: 0 50px;
+    &:last-child{
+      width: 35%;
+    }
+  }
+  .gyms__item2-desc-wrapper{
+    position: relative;
+  }
+  .gyms__exercises{
+    width: calc(100% - 170px);
+  }
+}

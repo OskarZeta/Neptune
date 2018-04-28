@@ -1,0 +1,56 @@
+.btn-blue{
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 20px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  padding: 14px 0;
+  background: linear-gradient(to bottom, #168ce4, #0066b4);
+  border: none;
+  &:hover{
+    background: linear-gradient(to bottom, #1671c3, #004f9b);
+  }
+  &:active{
+    background: rgb(0, 92, 191);
+    opacity: 0.6;
+  }
+}
+.btn-blue--order{
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 200px;
+  z-index: 2;
+}
+.btn-blue--schedule{
+  width: 170px;
+  padding: 12px 0;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+.btn-blue--test{
+  width: 170px;
+  padding: 12px 0;
+  border-radius: 5px;
+}
+@media (min-width: 800px) {
+  .btn-blue--order{
+    top: 15px;
+    right: 15px;
+    width: 170px;
+    padding: 12px 0;
+    border-radius: 5px;
+  }
+}
+@media (min-width: 1200px) {
+  .btn-blue--order{
+    margin-top: 13px;
+  }
+  .btn-blue--schedule{
+    position: absolute;
+    top: 55px;
+    right: 0;
+  }
+}
