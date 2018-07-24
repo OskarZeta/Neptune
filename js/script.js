@@ -41,3 +41,4 @@
     topMenuBtn.addEventListener('click', toggleMenu);
     navMenuBtn.addEventListener('click', toggleMenu);
 })();
+
