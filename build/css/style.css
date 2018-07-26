@@ -1,0 +1,1654 @@
+/*! normalize.scss v0.1.0 | MIT License | based on git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0;
+  padding: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+  outline: none; }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif; }
+
+body {
+  min-width: 400px; }
+
+h1, h2, h3, h4, h5, h6, ul, p {
+  margin: 0; }
+
+.about {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background-color: #efefef; }
+  .about h2 {
+    font-size: 26px;
+    color: #3c3c3b;
+    text-align: center;
+    margin-bottom: 25px; }
+
+.about__desc {
+  text-align: center;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 35px; }
+
+.about__item {
+  margin-bottom: 18px; }
+  .about__item:last-child {
+    margin-bottom: 0; }
+
+.arrow {
+  position: relative; }
+
+.arrow--white::before, .arrow--white::after {
+  background-color: white; }
+
+.arrow--grey::before, .arrow--grey::after {
+  background-color: #626262; }
+
+.arrow--hidden {
+  display: none; }
+
+.arrow--right {
+  width: 10px; }
+
+.arrow--right::before, .arrow--right::after {
+  position: absolute;
+  left: 0;
+  display: block;
+  content: "";
+  width: 7px;
+  height: 1px; }
+
+.arrow--right::before {
+  top: calc(50% - 3px);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg); }
+
+.arrow--right::after {
+  top: calc(50% + 2px);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
+
+.arrow--down {
+  width: 12px; }
+
+.arrow--down::before, .arrow--down::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 6px;
+  height: 1px; }
+
+.arrow--down::before {
+  top: 50%;
+  left: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg); }
+
+.arrow--down::after {
+  top: 50%;
+  left: 4px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
+
+.arrow--left {
+  width: 10px; }
+
+.arrow--left::before, .arrow--left::after {
+  position: absolute;
+  left: 0;
+  display: block;
+  content: "";
+  width: 7px;
+  height: 1px;
+  background-color: white; }
+
+.arrow--left::before {
+  top: calc(50% + 2px);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg); }
+
+.arrow--left::after {
+  top: calc(50% - 2.5px);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
+
+.arrow--up {
+  width: 14px; }
+
+.arrow--up::before, .arrow--up::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 7px;
+  height: 1px; }
+
+.arrow--up::before {
+  top: 50%;
+  left: 5px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg); }
+
+.arrow--up::after {
+  top: 50%;
+  left: 1px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
+
+.btn-blue {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 20px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  padding: 14px 0;
+  background: linear-gradient(to bottom, #168ce4, #0066b4);
+  border: none; }
+  .btn-blue:hover {
+    background: linear-gradient(to bottom, #1671c3, #004f9b); }
+  .btn-blue:active {
+    background: #005cbf;
+    opacity: 0.6; }
+
+.btn-blue--order {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 200px;
+  z-index: 2; }
+
+.btn-blue--schedule {
+  width: 170px;
+  padding: 12px 0;
+  border-radius: 5px;
+  margin: 0 auto; }
+
+.btn-blue--test {
+  width: 170px;
+  padding: 12px 0;
+  border-radius: 5px; }
+
+.contacts {
+  padding-top: 30px; }
+  .contacts h2 {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 20px; }
+
+.contacts__item {
+  display: flex;
+  padding: 0 10px;
+  margin-bottom: 15px;
+  color: #3c3c3b; }
+
+.contacts__icon {
+  margin-right: 25px;
+  margin-top: 10px; }
+
+.contacts__info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding-right: 30%; }
+  .contacts__info h3 {
+    font-size: 16px;
+    margin-bottom: 10px; }
+  .contacts__info span {
+    font-size: 14px;
+    margin-bottom: 5px; }
+  .contacts__info a {
+    font-size: 14px;
+    color: #3c3c3b; }
+
+span.contacts__address {
+  font-size: 12px; }
+
+.contacts__map {
+  margin-top: 25px; }
+
+.container {
+  width: 400px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative; }
+
+.container--footer {
+  display: flex;
+  flex-wrap: wrap; }
+  .container--footer > *:nth-child(2),
+  .container--footer > *:nth-child(4) {
+    width: auto;
+    margin-left: 20px; }
+  .container--footer > *:nth-child(1),
+  .container--footer > *:nth-child(2) {
+    margin-bottom: 20px; }
+
+.extra {
+  padding: 25px 0; }
+
+.extra__item {
+  margin-bottom: 20px; }
+  .extra__item:last-child {
+    margin-bottom: 0; }
+
+.footer {
+  background-color: #0d3e7e;
+  color: white;
+  padding: 50px 0; }
+
+.footer__info {
+  width: 50%;
+  display: flex;
+  flex-direction: column; }
+
+.footer__logo {
+  margin-bottom: 20px; }
+
+.footer__phone {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold; }
+
+.footer__address {
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 5px; }
+
+.footer__vk-logo {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 13px;
+  text-decoration: none;
+  width: 60%;
+  margin-top: 20px; }
+  .footer__vk-logo:hover {
+    text-decoration: underline; }
+
+.footer__vk-logo-wrapper {
+  display: flex;
+  width: 25px;
+  height: 25px;
+  background-color: #0269b7;
+  border-radius: 5px;
+  justify-content: center;
+  margin-right: 10px; }
+
+.footer__list-1 {
+  width: 50%;
+  list-style-type: none;
+  padding: 0; }
+
+.footer__list-1-item a {
+  font-size: 14px;
+  line-height: 27px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none; }
+  .footer__list-1-item a:hover {
+    color: #98ACFF; }
+
+.footer__list-2 {
+  list-style-type: none;
+  padding: 0 0 0 10px; }
+
+.footer__list-2-item a {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 16px; }
+  .footer__list-2-item a:hover {
+    color: #98ACFF; }
+
+.footer__navigation {
+  width: 50%; }
+
+.footer__navigation-list {
+  list-style-type: none;
+  padding: 0; }
+
+.footer__navigation-item {
+  margin-bottom: 5px; }
+  .footer__navigation-item a {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none; }
+    .footer__navigation-item a:hover {
+      color: #98ACFF; }
+
+.footer__scheme {
+  display: none; }
+
+.footer__copyright {
+  width: 100%;
+  margin-top: 25px;
+  font-size: 12px;
+  color: #c6c6c6;
+  text-align: center; }
+
+.gyms {
+  background-color: #efefef;
+  padding-top: 25px; }
+  .gyms h2 {
+    text-align: center;
+    font-size: 26px;
+    color: #626262;
+    line-height: 40px;
+    margin-bottom: 35px; }
+
+.gyms__item1-desc-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px 0;
+  margin-bottom: 15px; }
+
+.gyms__item1-desc {
+  color: #626262;
+  font-weight: bold;
+  text-align: center; }
+  .gyms__item1-desc strong {
+    font-size: 56px;
+    line-height: 56px; }
+  .gyms__item1-desc span {
+    font-size: 16px;
+    line-height: 16px; }
+  .gyms__item1-desc:first-child {
+    width: 55%;
+    margin-right: 25px; }
+  .gyms__item1-desc:last-child {
+    width: 30%; }
+
+.gyms__item2-desc-wrapper {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 25px 0 30px 0; }
+  .gyms__item2-desc-wrapper h3 {
+    font-size: 16px;
+    margin-bottom: 5px; }
+
+.gyms__exercises {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 25px; }
+
+.gyms__exercise {
+  color: #858585;
+  width: 50%; }
+
+.visible {
+  display: block !important; }
+
+.header__top-menu {
+  background-color: #efefef;
+  font-size: 13px;
+  line-height: 13px;
+  color: #6b737a;
+  padding: 7px 0;
+  position: relative; }
+
+.header__top-menu-wrapper {
+  display: flex;
+  justify-content: space-between; }
+
+.header__top-menu-mobile {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  cursor: pointer; }
+  .header__top-menu-mobile span {
+    text-transform: uppercase; }
+  .header__top-menu-mobile img {
+    margin-right: 10px; }
+  .header__top-menu-mobile:hover {
+    text-decoration: underline; }
+
+.header__vk-logo {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  line-height: 13px;
+  color: #6b737a;
+  text-decoration: none; }
+  .header__vk-logo:hover {
+    text-decoration: underline; }
+
+.header__vk-logo-wrapper {
+  display: flex;
+  width: 25px;
+  height: 25px;
+  background-color: #0269b7;
+  border-radius: 5px;
+  justify-content: center;
+  margin-right: 10px; }
+
+.header__top-menu-items {
+  display: none;
+  position: absolute;
+  top: calc(100% + 7px);
+  left: 0;
+  list-style-type: none;
+  padding: 10px 10px 0 10px;
+  width: 100%;
+  background-color: #e4e4e4;
+  z-index: 3; }
+
+.header__top-menu-item {
+  padding: 0 40px 10px 40px; }
+  .header__top-menu-item a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #6b737a; }
+    .header__top-menu-item a:hover {
+      text-decoration: underline; }
+
+.header__description-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  color: #3c3c3b;
+  position: relative; }
+
+.header__phones, .header__scheme, .header__address {
+  width: 50%; }
+
+.header__logo {
+  width: 170px;
+  height: 42px;
+  margin-top: 10px; }
+
+.header__phones {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold; }
+  .header__phones span {
+    display: block;
+    padding-left: 15px; }
+
+.header__scheme {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #3c3c3b;
+  text-decoration: none; }
+  .header__scheme img {
+    margin-right: 12px; }
+  .header__scheme:hover {
+    text-decoration: underline; }
+
+.header__address {
+  font-size: 14px;
+  line-height: 18px;
+  padding-left: 15px; }
+
+.header__order-btn {
+  position: absolute; }
+
+.header__navigation {
+  background-color: #06356d; }
+
+.header__navigation-mobile {
+  margin-left: 12px;
+  padding: 13px 0;
+  display: inline-block;
+  cursor: pointer; }
+  .header__navigation-mobile span {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    margin-left: 8px; }
+  .header__navigation-mobile:hover span {
+    text-decoration: underline; }
+
+.header__navigation-1 {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  list-style-type: none;
+  background-color: #052b58;
+  padding: 12px 0 20px 0; }
+
+.header__navigation-1-item {
+  padding: 5px 0; }
+  .header__navigation-1-item a {
+    padding-left: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white; }
+    .header__navigation-1-item a:hover {
+      text-decoration: underline; }
+
+.header__navigation-2 {
+  list-style-type: none;
+  background-color: #0066b3;
+  padding: 10px 0;
+  margin-top: 10px;
+  width: 100%; }
+  .header__navigation-2 a {
+    padding-left: 15px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none; }
+
+.header__navigation-2-item {
+  margin-bottom: 5px; }
+
+.main-info {
+  padding-top: 30px; }
+  .main-info h1 {
+    font-size: 26px;
+    color: #3c3c3b;
+    text-align: center; }
+
+.main-info__items {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 55px; }
+
+.main-info__item {
+  width: 50%;
+  font-size: 13px;
+  line-height: 16px;
+  color: #3c3c3b;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 30px; }
+  .main-info__item p {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+    padding-top: 20px; }
+  .main-info__item a {
+    color: #0066b3; }
+    .main-info__item a:hover {
+      text-decoration: none; }
+
+.main-info__icon-star, .main-info__icon-muscle, .main-info__icon-discount {
+  margin-bottom: 20px; }
+
+.main-info__icon-discount {
+  min-height: 50px; }
+
+.main-info__star p, .main-info__muscle p, .main-info__discount p {
+  padding-top: 0; }
+
+.main-info__discount {
+  width: 100%; }
+
+.main-info__icon-wrapper {
+  min-height: 85px;
+  margin-bottom: 20px;
+  display: flex; }
+
+.pools {
+  background: url("../images/sports/mobile/pools-bg-mobile.png") center no-repeat;
+  padding-top: 35px; }
+  .pools h2 {
+    font-size: 26px;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px; }
+
+.pools__item:last-child .pools__item-desc:last-child {
+  width: 60%; }
+
+.pools__item-desc-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px 30px 40px; }
+
+.pools__item-desc {
+  color: white;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .pools__item-desc strong {
+    font-size: 56px;
+    line-height: 56px;
+    text-align: center; }
+  .pools__item-desc span {
+    font-size: 16px;
+    text-align: center; }
+
+.slider {
+  position: relative; }
+
+.slider__item {
+  display: block;
+  width: 400px;
+  height: 194px;
+  margin: 0 auto; }
+
+.slider__nav-arrows {
+  position: absolute;
+  width: 400px;
+  top: calc(50% - 25px);
+  left: 50%; }
+
+.slider__prev, .slider__next {
+  position: absolute;
+  cursor: pointer;
+  width: 30px;
+  height: 50px;
+  top: 0;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.65); }
+  .slider__prev:hover, .slider__next:hover {
+    background-color: rgba(0, 0, 0, 0.8); }
+
+.slider__prev {
+  left: 0; }
+
+.slider__next {
+  right: 0; }
+
+.slider__prev::before, .slider__next::before,
+.slider__prev::after, .slider__next::after {
+  position: absolute;
+  left: calc(50% - 5px);
+  display: block;
+  content: "";
+  width: 10px;
+  height: 1px;
+  background-color: white; }
+
+.slider__prev::before {
+  top: calc(50% - 4px);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
+
+.slider__prev::after {
+  top: calc(50% + 3px);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg); }
+
+.slider__next::before {
+  top: calc(50% - 4px);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg); }
+
+.slider__next::after {
+  top: calc(50% + 3px);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
+
+.slider__nav-dots {
+  display: flex;
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  justify-content: center; }
+
+.slider__nav-dot {
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin-right: 7px;
+  cursor: pointer;
+  padding: 0; }
+  .slider__nav-dot:last-child {
+    margin-right: 0; }
+  .slider__nav-dot:hover {
+    background-color: rgba(255, 255, 255, 0.5); }
+
+.slider__nav-dot.active {
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5); }
+  .slider__nav-dot.active:hover {
+    background-color: transparent; }
+
+.spa {
+  background-color: #efefef;
+  padding-top: 40px;
+  padding-bottom: 25px; }
+  .spa h2 {
+    font-size: 26px;
+    color: #626262;
+    text-align: center;
+    margin-bottom: 45px; }
+  .spa .arrow__right, .spa .arrow__left {
+    display: none; }
+
+.spa__services-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; }
+
+.spa__service {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 16px;
+  color: #858585;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+.spa__service-desc {
+  cursor: pointer; }
+
+.spa__service--active .spa__service-desc {
+  background-color: #0066b3;
+  color: white; }
+
+.spa__service--active .spa__service-wrapper {
+  display: block; }
+
+.spa__service--active .arrow::before, .spa__service--active .arrow::after {
+  background-color: white !important; }
+
+.spa__service--active .arrow--down {
+  display: none; }
+
+.spa__service--active .arrow--left {
+  display: block; }
+
+.spa__service-desc {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 28px 8px 10px; }
+
+.spa__service-wrapper {
+  display: none;
+  padding: 20px 0 12px 0;
+  width: 100%; }
+
+.spa__service-other-imgs {
+  display: flex;
+  margin-top: 20px; }
+
+.sport-item {
+  position: relative;
+  display: flex; }
+
+.sport-item__ref {
+  display: block;
+  margin: 0 auto;
+  width: 100%; }
+  .sport-item__ref img {
+    display: block;
+    width: 100%; }
+  .sport-item__ref:hover {
+    position: relative; }
+    .sport-item__ref:hover::before, .sport-item__ref:hover::after {
+      display: block;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.3); }
+
+.sport-item__wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px 30px 15px 20px; }
+  .sport-item__wrapper span {
+    font-size: 16px;
+    font-weight: bold;
+    color: white; }
+
+.testing {
+  background: url("../images/sports/mobile/testing-bg-mobile.png") center no-repeat;
+  padding-top: 45px;
+  padding-bottom: 30px; }
+  .testing h2 {
+    font-size: 26px;
+    color: white;
+    text-align: center;
+    margin-bottom: 45px; }
+
+.testing__info-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #94d1ff;
+  font-weight: bold;
+  padding: 0 5px;
+  margin-bottom: 33px; }
+  .testing__info-wrapper strong {
+    font-size: 56px;
+    line-height: 56px; }
+  .testing__info-wrapper span {
+    font-size: 16px;
+    text-align: center; }
+
+.testing__time, .testing__price {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.testing__time {
+  margin-right: 10px; }
+
+.testing__desc {
+  width: 40%; }
+
+.testing__form {
+  display: flex;
+  justify-content: space-between; }
+  .testing__form input {
+    width: 170px;
+    border-radius: 5px;
+    border: none;
+    padding: 0 15px; }
+  @media (min-width: 800px) {
+  .about {
+    padding-top: 80px;
+    padding-bottom: 15px; }
+  .about__desc {
+    margin-bottom: 55px; }
+  .about__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .about__item {
+    margin-bottom: 30px; }
+    .about__item:last-child {
+      margin-bottom: 30px; }
+  .btn-blue--order {
+    top: 15px;
+    right: 15px;
+    width: 170px;
+    padding: 12px 0;
+    border-radius: 5px; }
+  .contacts {
+    padding-top: 50px; }
+    .contacts h2 {
+      margin-bottom: 50px; }
+  .contacts__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 15px;
+    padding-bottom: 25px; }
+  .contacts__item {
+    width: 50%;
+    margin-bottom: 50px; }
+    .contacts__item:nth-child(3), .contacts__item:nth-child(4) {
+      margin-bottom: 0; }
+  .contacts__map {
+    margin-top: 60px; }
+  .container {
+    width: 800px;
+    padding: 0 15px; }
+  .container--extra {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .container--footer {
+    position: relative;
+    padding: 0 45px; }
+    .container--footer > *:nth-child(2),
+    .container--footer > *:nth-child(4) {
+      margin-left: 15px; }
+    .container--footer > *:nth-child(1),
+    .container--footer > *:nth-child(2) {
+      margin-bottom: 40px; }
+  .extra {
+    padding: 30px 0 0 0; }
+  .extra__item {
+    margin-bottom: 30px; }
+    .extra__item:last-child {
+      margin-bottom: 30px; }
+  .footer {
+    padding-top: 60px; }
+  .footer__address {
+    padding-right: 30%; }
+  .footer__copyright {
+    width: 20%;
+    position: absolute;
+    bottom: 0;
+    left: 50%; }
+  .gyms {
+    padding-top: 40px; }
+    .gyms h2 {
+      margin-bottom: 60px; }
+  .gyms__wrapper {
+    display: flex;
+    justify-content: space-between; }
+  .gyms__item {
+    width: calc(50% - 15px); }
+  .gyms__exercises {
+    margin-bottom: 15px; }
+  .gyms__exercise {
+    padding-bottom: 5px; }
+  .header__top-menu-mobile {
+    display: none; }
+  .header__top-menu-items {
+    display: flex;
+    position: static;
+    background-color: transparent;
+    padding: 0; }
+  .header__top-menu-item {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-right: 35px; }
+    .header__top-menu-item:last-child {
+      margin: 0; }
+  .header__description-wrapper {
+    width: 75%;
+    padding-bottom: 25px; }
+  .header__logo {
+    width: 169px;
+    height: 42px; }
+  .header__phones, .header__scheme {
+    width: 33%; }
+  .header__phones {
+    order: 3;
+    padding-top: 5px; }
+  .header__scheme {
+    order: 2;
+    margin-left: 25px; }
+  .header__address {
+    width: 100%;
+    order: 4;
+    text-align: right;
+    margin-top: 13px; }
+  .header__navigation-mobile {
+    display: none; }
+  .header__navigation {
+    background-color: #052b58; }
+  .header__navigation-1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    position: relative; }
+  .header__navigation-1-item {
+    min-width: 15%;
+    display: flex;
+    justify-content: center;
+    padding: 11px 20px;
+    position: relative;
+    cursor: pointer; }
+    .header__navigation-1-item a {
+      padding-left: 0; }
+    .header__navigation-1-item:hover {
+      background-color: #06356d; }
+      .header__navigation-1-item:hover a {
+        text-decoration: none; }
+      .header__navigation-1-item:hover .header__navigation-2 {
+        display: block; }
+  .header__navigation-2 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 0;
+    width: 100%; }
+    .header__navigation-2 a {
+      padding-left: 20px; }
+  .main-info {
+    padding-top: 55px;
+    padding-bottom: 45px; }
+  .main-info__items {
+    padding-top: 100px; }
+  .main-info__item {
+    margin-bottom: 50px; }
+  .main-info__discount {
+    width: 51%;
+    margin: 50px auto 0 auto; }
+  .main-info__icon-wrapper {
+    min-height: 105px;
+    margin-bottom: 0; }
+    .main-info__icon-wrapper img {
+      width: 100%;
+      height: 100%; }
+  .main-info__icon-car {
+    width: 103px;
+    height: 103px; }
+  .main-info__icon-train {
+    width: 86px;
+    height: 73px; }
+  .main-info__icon-star {
+    width: 77px;
+    height: 88px; }
+  .main-info__icon-muscle {
+    width: 76px;
+    height: 76px; }
+  .main-info__icon-discount {
+    width: 87px;
+    height: 50px; }
+  .main-info__text {
+    font-size: 16px;
+    line-height: 20px; }
+  .pools {
+    background: url("../images/sports/tablet/pools-bg-tablet.png") center no-repeat;
+    padding-top: 70px;
+    padding-bottom: 20px; }
+    .pools h2 {
+      margin-bottom: 65px; }
+  .pools__wrapper {
+    display: flex;
+    justify-content: space-between; }
+  .pools__item {
+    width: calc(50% - 15px); }
+  .pools__item-desc-wrapper {
+    padding-top: 17px; }
+  .slider__item {
+    width: 800px;
+    height: 289px; }
+  .slider__nav-arrows {
+    width: 800px; }
+  .slider__prev, .slider__next {
+    width: 50px;
+    height: 85px; }
+  .slider__prev::before, .slider__next::before,
+  .slider__prev::after, .slider__next::after {
+    width: 14px; }
+  .slider__prev::before {
+    top: calc(50% - 5px); }
+  .slider__prev::after {
+    top: calc(50% + 5px); }
+  .slider__next::before {
+    top: calc(50% - 5px); }
+  .slider__next::after {
+    top: calc(50% + 5px); }
+  .slider__nav-dot {
+    width: 14px;
+    height: 14px; }
+  .spa {
+    padding-top: 30px;
+    padding-bottom: 260px; }
+    .spa h2 {
+      margin-bottom: 50px; }
+  .spa__services-list {
+    width: 270px;
+    position: relative; }
+  .spa__service .arrow--down {
+    display: none; }
+  .spa__service .arrow--right {
+    display: block; }
+  .spa__service--active .arrow--left {
+    display: none; }
+  .spa__service-desc {
+    padding-right: 15px;
+    padding-bottom: 10px; }
+  .spa__service-wrapper {
+    position: absolute;
+    left: calc(100% + 30px);
+    top: 0;
+    padding-top: 10px;
+    width: auto; }
+  .spa__service-other-imgs {
+    margin-top: 30px; }
+  .sport-item {
+    width: 369px; }
+  .testing {
+    background: url("../images/sports/tablet/testing-bg-tablet.png") center;
+    padding-bottom: 45px; }
+  .testing__info-wrapper {
+    justify-content: center;
+    margin-bottom: 37px; }
+  .testing__time, .testing__price, .testing__desc {
+    width: 25%; }
+  .testing__form {
+    margin-bottom: 0; }
+    .testing__form input {
+      width: 74%; } }
+  @media (min-width: 1200px) {
+  .about {
+    padding-top: 70px;
+    padding-bottom: 30px; }
+    .about h2 {
+      font-size: 36px; }
+  .about__desc {
+    font-size: 24px; }
+  .btn-blue--order {
+    margin-top: 13px; }
+  .btn-blue--schedule {
+    position: absolute;
+    top: 55px;
+    right: 0; }
+  .contacts {
+    padding-top: 70px; }
+    .contacts h2 {
+      font-size: 36px; }
+  .contacts__wrapper {
+    flex-wrap: nowrap;
+    padding-top: 10px;
+    padding-bottom: 0;
+    position: relative; }
+  .contacts__item {
+    width: 25%;
+    margin-bottom: 0; }
+  .contacts__info {
+    padding-right: 0; }
+  .contacts__map {
+    margin-top: 40px; }
+  .container {
+    width: 1200px; }
+  .container--footer {
+    padding: 0 5% 0 15px;
+    justify-content: space-between; }
+    .container--footer > *:nth-child(2),
+    .container--footer > *:nth-child(4) {
+      width: 20%; }
+  .extra {
+    padding-bottom: 25px; }
+  .footer {
+    padding-top: 60px; }
+  .footer__info {
+    width: 233px; }
+  .footer__list-1, .footer__navigation {
+    width: 20%; }
+  .footer__address {
+    padding-right: 0; }
+  .footer__copyright {
+    width: 100%;
+    position: static;
+    margin-top: 0; }
+  .footer__scheme {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    margin-top: 25px; }
+  .footer__scheme-icon {
+    margin-right: 10px; }
+  .gyms {
+    padding-bottom: 30px; }
+    .gyms h2 {
+      font-size: 36px; }
+  .gyms__item1-desc {
+    padding: 0 50px; }
+    .gyms__item1-desc:last-child {
+      width: 35%; }
+  .gyms__item2-desc-wrapper {
+    position: relative; }
+  .gyms__exercises {
+    width: calc(100% - 170px); }
+  .header__top-menu-items {
+    width: 65%;
+    justify-content: space-between; }
+  .header__description-wrapper {
+    width: calc(100% - 170px);
+    flex-wrap: nowrap;
+    padding-top: 10px;
+    padding-right: 50px;
+    align-items: center; }
+  .header__vk-logo {
+    margin-right: 40px; }
+  .header__logo {
+    width: 233px;
+    height: 57px; }
+  .header__phones, .header__scheme, .header__address {
+    width: 25%; }
+  .header__address {
+    text-align: left;
+    padding-left: 0;
+    margin-right: 30px; }
+  .header__scheme {
+    margin-left: 70px;
+    flex-shrink: 4; }
+  .main-info {
+    padding-bottom: 20px; }
+    .main-info h1 {
+      font-size: 36px; }
+  .main-info__items {
+    justify-content: center; }
+  .main-info__item {
+    width: 33%; }
+  .main-info__icon-star, .main-info__icon-muscle, .main-info__icon-discount {
+    margin-bottom: 20px; }
+  .main-info__discount {
+    margin: 0; }
+  .pools {
+    background: url("../images/sports/desktop/pools-bg-desktop.png");
+    padding-top: 60px; }
+    .pools h2 {
+      font-size: 36px; }
+  .pools__item-desc-wrapper {
+    justify-content: space-around; }
+  .pools__item:last-child .pools__item-desc:last-child {
+    width: 35%; }
+  .slider__item {
+    width: 1920px;
+    height: 690px; }
+  .slider__nav-arrows {
+    width: 1200px; }
+  .slider__prev {
+    left: 15px;
+    top: -10px; }
+  .slider__next {
+    right: 15px;
+    top: -10px; }
+  .spa {
+    padding-top: 40px;
+    padding-bottom: 150px; }
+    .spa h2 {
+      font-size: 36px;
+      margin-bottom: 40px; }
+  .spa__service-desc {
+    padding-bottom: 12px; }
+  .spa__service--active .spa__service-wrapper {
+    display: flex; }
+  .spa__service--active .spa__service-other-imgs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    margin-left: 30px; }
+    .spa__service--active .spa__service-other-imgs picture:first-child {
+      height: 150px; }
+    .spa__service--active .spa__service-other-imgs picture:last-child {
+      height: 180px; }
+  .sport-item {
+    width: 570px; }
+  .sport-item--mini {
+    width: 270px; }
+  .testing {
+    background: url("../images/sports/desktop/testing-bg-desktop.png") center;
+    padding-top: 75px;
+    padding-bottom: 60px; }
+    .testing h2 {
+      font-size: 36px; }
+  .testing__wrapper {
+    display: flex;
+    justify-content: space-between; }
+  .testing__info-wrapper {
+    width: 50%;
+    margin-bottom: 0;
+    justify-content: space-between;
+    padding-right: 80px; }
+  .testing__form {
+    width: 50%;
+    align-items: center;
+    padding-left: 10px; }
+    .testing__form input {
+      padding-top: 11px;
+      padding-bottom: 11px;
+      border-radius: 0;
+      width: 370px; } }
+  @media (min-width: 1320px) {
+  .contacts__wrapper {
+    position: relative; }
+  .contacts__up {
+    display: none;
+    position: fixed;
+    top: 70%;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #0269B7;
+    cursor: pointer;
+    z-index: 10; }
+  .contacts__up--visible {
+    display: flex;
+    justify-content: center; } }
