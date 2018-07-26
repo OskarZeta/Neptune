@@ -82,7 +82,9 @@ gulp.task("build", function(fn){
 gulp.task("copy", function(){
 	return gulp.src([
 		"images/**",
-		"*.html"
+	  	"css/style.css",
+		"*.html",
+	  	"js/**"
 		], {
 			base: "."
 		})
